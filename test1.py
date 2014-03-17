@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# ADDED comment for another commit
-# testing change
 
 import getopt, sys, urllib, time
 
@@ -140,4 +138,3 @@ def usage():
 #-------------------------------
 if __name__ == "__main__":
     main()
-    
