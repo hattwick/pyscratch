@@ -5,8 +5,11 @@
 import urllib
 import urllib2
 import urllib3
+import urlparse
 
-from urllib.parse import parse_qs
+from urlparse import parse_qs
 
 my_values = parse_qs('red=5&blue=0&green=',keep_blank_values=True)
+
+print (repr(my_values))
 
