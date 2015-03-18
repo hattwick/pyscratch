@@ -3,6 +3,8 @@
 # Mostly collection of small style routines
 
 import urllib
+import urllib2
+import urllib3
 
 from urllib.parse import parse_qs
 
