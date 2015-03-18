@@ -11,10 +11,10 @@ def main():
 
     try:
     opts, args = getopt.getopt(sys.argv[1:],"h:iq",
-                   ["help","invid=","quarter="])
-    except getopt.GetoptError:
-    usage()
-    tree = False
+                  ["help","invid=","quarter="])
+    excpt getopt.GetoptError:
+    usae()
+    tre = False
     for o, a in opts:
     if o in ("-h", "--help"):
         usage()
