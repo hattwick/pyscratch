@@ -1,0 +1,25 @@
+#AWS Simple boto samples
+
+# Write the message
+import simplejson, boto, uuid
+sqs = boto.connect_sqs()
+q = sqs.create_queue('my_message_pump')
+data = simplejson.dumps(<some data structure>)
+s3 = boto.connect_s3()
+bucket = s3.get_bucket('message_pump.yourdomain.com')
+key = bucket.new_key('2010-03-20/%s.json' % str(uuid.uuid4())
+key.set_contents_from_string(data)
+message = q.new_message(body=simplejson.dumps({'bucket': bucket.name, 'key': key.name}))
+q.write(message)
+
+# Read the message
+import simplejson, boto, do_some_work
+sqs = boto.connect_sqs()
+q = sqs.get_queue('my_message_pump')
+message = q.read()
+if message is not None:   # if it is continue reading until you get a message
+    msg_data = simplejson.loads(message.get_body())
+    key = boto.connect_s3().get_bucket(msg_data['bucket']).get_key(msg_data['key'])
+    data = simplejson.loads(key.get_contents_as_string())
+    do_some_work(data)
+    q.delete_message(message)
