@@ -1,6 +1,7 @@
 #AWS Simple boto samples
 
 # Write the message
+
 import simplejson, boto, uuid
 sqs = boto.connect_sqs()
 q = sqs.create_queue('my_message_pump')
@@ -12,7 +13,9 @@ key.set_contents_from_string(data)
 message = q.new_message(body=simplejson.dumps({'bucket': bucket.name, 'key': key.name}))
 q.write(message)
 
+
 # Read the message
+
 import simplejson, boto, do_some_work
 sqs = boto.connect_sqs()
 q = sqs.get_queue('my_message_pump')
