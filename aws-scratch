@@ -26,5 +26,3 @@ if message is not None:   # if it is continue reading until you get a message
     data = simplejson.loads(key.get_contents_as_string())
     do_some_work(data)
     q.delete_message(message)
-
-# Routines posted here
