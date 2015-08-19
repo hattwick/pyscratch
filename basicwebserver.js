@@ -27,12 +27,15 @@ var server = http.createServer(function(req, res){
     	  		} else {
     	  			  res.writeHead(200, { 'Content-Type' : contentType});
     	  			  res.end(content, 'utf-8');
-    	  	  })
+    	  	  }
+    	  	 })
     	  	  
     	  } else {
     	  	res.writeHead(404);
     	  	res.end("Sorry, we could not file the file requested.");
     	  }
+    	 }
+    	 )
 }).listen(port, host, function(){
     console.log('Server running on http://' + host + ':' + port);
 })
