@@ -32,6 +32,11 @@ var server = http.createServer(function(req, res){
     	  	
     	  	res.writeHead(200, { 'Content-Type' : contentType});
     	  	var streamFile = fs.createReadStream(filepath).pipe(res);
+    	  	
+    	  	streamFile.on('error', function(){
+    	  		res.writeHead(500);
+    	  		res.end();
+    	  	 })
     	  	  
     	  } else {
     	  	res.writeHead(404);
