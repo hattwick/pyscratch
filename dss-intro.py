@@ -44,3 +44,7 @@ total_connections = sum(number_of_friends(user)
 num_users = len(users)
 avg_connections = total_connections / num_users # 2.4
 
+print("Number of Users: ",num_users)
+print("Average Connections: ",avg_connections)
+
+
