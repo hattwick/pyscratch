@@ -35,15 +35,3 @@ for i, j in friendships:
     users[j]["friends"].append(users[i]) # add j as a friend of i 
 
 
-def_friends(user):
-    """how many friends does _user_ have?"""
-    return len(user["friends"]) # length of friend_ids list
-
-total_connections = sum(number_of_friends(user)
-                        for user in users) # 24
-
-num_users = len(users)
-avg_connections = total_connections / num_users # 2.4
-
-
-### Pick up at DATA SCIENTISTS YOU MAY KNOW
