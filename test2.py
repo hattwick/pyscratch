@@ -18,4 +18,7 @@ def __getitem__(self, position):
     
 deck = FrenchDeck()
 
+
+
+print(deck)
 print(len(deck))
