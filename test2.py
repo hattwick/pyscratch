@@ -20,5 +20,5 @@ deck = FrenchDeck()
 
 
 
-print(deck)
-print(len(deck))
+print(deck[0:51])
+print('Total Cards: ',len(deck))
