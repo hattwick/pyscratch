@@ -27,6 +27,7 @@ print('Total Cards: ',len(deck))
 
 for card in deck:
     print(card)
+    reverse = True
 
 
 #End - stopping point
