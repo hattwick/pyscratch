@@ -22,3 +22,11 @@ deck = FrenchDeck()
 
 print(deck[0:51])
 print('Total Cards: ',len(deck))
+
+# orderly print
+
+for card in deck:
+    print(card)
+
+
+#End - stopping point
