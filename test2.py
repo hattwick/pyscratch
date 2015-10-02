@@ -25,9 +25,10 @@ print('Total Cards: ',len(deck))
 
 # orderly print
 
+print('/// Starting Deck Print///')
 for card in reversed(deck):
     print(card)
     #  reverse = True
-
+print('/// End of Deck///')
 
 #End - stopping point
