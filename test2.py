@@ -26,9 +26,11 @@ print('Total Cards: ',len(deck))
 # orderly print
 
 print('/// Starting Deck Print///')
+count = 0
 for card in reversed(deck):
     print(card)
+    count = count + 1
     #  reverse = True
-print('/// End of Deck///')
+print('/// End of Deck.  ',count,' cards printed///')
 
 #End - stopping point
