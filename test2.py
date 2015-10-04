@@ -33,4 +33,13 @@ for card in reversed(deck):
     #  reverse = True
 print('/// End of Deck.  ',count,' cards printed///')
 
+print('Sort by suit and value')
+
+suit_values = dict(spaces=3, hearts=2, diamonds=1, clubs=0)
+
+def spades_high(card):
+    rank_value = FrenchDeck.ranks.index(card.rank)
+    return rank_value * len(suit_values) + suit_values[card.suit]
+
+
 #End - stopping point
