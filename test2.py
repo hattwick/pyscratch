@@ -35,13 +35,17 @@ print('/// End of Deck.  ',count,' cards printed///')
 
 print('Sort by suit and value')
 
-suit_values = dict(spaces=3, hearts=2, diamonds=1, clubs=0)
+suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
 
-def spades_high(card):
+def spadeshigh(card):
     rank_value = FrenchDeck.ranks.index(card.rank)
     return rank_value * len(suit_values) + suit_values[card.suit]
 
 for card in sorted(deck):  # doctest: + ELLIPSES
+    print(card)
+
+
+for card in sorted(deck, key=spadeshigh):  # doctest: + ELLIPSES
     print(card)
 
 #End - stopping point
