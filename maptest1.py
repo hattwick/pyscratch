@@ -75,8 +75,8 @@ for host, status in hosts_list:
 
 nma = nmap.PortScannerAsync()
 def callback_result(host, scan_result):
-    print '------------------'
-    print host, scan_result
+    print('------------------')
+    print(host, scan_result)
 
 nma.scan(hosts='10.0.1.0/27', arguments='-sP', callback=callback_result)
 while nma.still_scanning():
@@ -91,4 +91,4 @@ while nma.still_scanning():
 
 nm = nmap.PortScannerYield()
 for progressive_result in nm.scan('127.0.0.1/24', '22-25'):
-    print(progressive\_result)
+    print(progressive_result)
