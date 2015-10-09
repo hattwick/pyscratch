@@ -20,3 +20,5 @@ def __add__(self,other):
 
 def __mul__(self, scalar):
 	return Vector(self.x * scalar, self.y * scalar)
+
+# continue here
