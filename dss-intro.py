@@ -35,7 +35,7 @@ for i, j in friendships:
     users[j]["friends"].append(users[i]) # add j as a friend of i 
 
 
-def_friends(user):
+def number_of_friends(user):
     """how many friends does _user_ have?"""
     return len(user["friends"]) # length of friend_ids list
 
