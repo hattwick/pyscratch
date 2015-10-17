@@ -5,7 +5,7 @@ var http = require('http'),
     fs = require('fs'),
     path = require('path'),
     host = '127.0.0.1',
-    port = '9000';
+    port = '9090';
     
 var mimes = {
 	  ".htm" : "text/html",
