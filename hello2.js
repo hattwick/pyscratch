@@ -1,5 +1,5 @@
 // "use strict";
-const http = require('http');
+var http = require('http');
 // Stick to require statement for bringing modules in.  Node is still working on stabile module implementation
 
 http
