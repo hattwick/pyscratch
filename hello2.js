@@ -7,4 +7,4 @@ http
     	res.writeHead(200, {'Content-type': 'text/html'});
     	res.end('<h1>Infra-TST VPC Reporting Reachable</h1>');
     })
-    .listen(8080, () => console.log('Server running on port 8080'));
+    .listen(8080, () => console.log('Server listening on port 8080'));
