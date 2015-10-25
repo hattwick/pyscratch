@@ -48,4 +48,11 @@ for card in sorted(deck):  # doctest: + ELLIPSES
 for card in sorted(deck, key=spadeshigh):  # doctest: + ELLIPSES
     print(card)
 
+
+print('\n\n\n*** Gathering some statistics***\n')
+
+# How many aces?
+
+print(deck)
+
 #End - stopping point
