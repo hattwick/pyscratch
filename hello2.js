@@ -3,11 +3,12 @@ var http = require('http');
 var server = http.createServer();
 // Stick to require statement for bringing modules in.  Node is still working on stabile module implementation
 
-server.on('request', function(req, res))  {
+server.on('request', function(req, res)  {
 	res.end('Node Server is Listening');
 });
 
 server.listen(8080)
+console.log('Server running on http://localhost:9000')
 
 // http
 //     .createServer((req, res) => {
