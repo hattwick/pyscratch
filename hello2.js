@@ -1,10 +1,17 @@
 // "use strict";
 var http = require('http');
+var server = http.createServer();
 // Stick to require statement for bringing modules in.  Node is still working on stabile module implementation
 
-http
-    .createServer((req, res) => {
-    	res.writeHead(200, {'Content-type': 'text/html'});
-    	res.end('<h1>Infra-TST VPC Reporting Reachable</h1>');
-    })
-    .listen(8080, () => console.log('Server listening on port 8080'));
+server.on('request', function(req, res))  {
+	res.end('Node Server is Listening');
+});
+
+server.listen(8080)
+
+// http
+//     .createServer((req, res) => {
+//    	res.writeHead(200, {'Content-type': 'text/html'});
+//    	res.end('<h1>Infra-TST VPC Reporting Reachable</h1>');
+//    })
+//    .listen(8080, () => console.log('Server listening on port 8080'));
