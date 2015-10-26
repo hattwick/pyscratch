@@ -53,6 +53,7 @@ print('\n\n\n*** Gathering some statistics***\n')
 
 # How many aces?
 
-print(deck)
+# Placeholder for some analytic queries
+
 
 #End - stopping point
