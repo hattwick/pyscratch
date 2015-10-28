@@ -17,6 +17,11 @@ def printRecird(tgt):
 	long = rec['longitude']
 	lat = rec['latitude']
 	print('[*] Target: ' + tgt + ' Geolocated. ')
-	print([+] '+str(city)+', '+str(region)+', '+str(country)')
+#	print([+] '+str(city)+', '+str(region)+', '+str(country)')
 
-	
+# Enter the IP you wish to locate
+tgt = '134.42.114.185'
+
+printRecord(tgt)
+
+# -30-
