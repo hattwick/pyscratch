@@ -9,10 +9,10 @@
 import pygeoip
 gi = pygeoip.GeoIP('/opt/GeoIP/GeoLiteCity.dat')
 
-def printRecird(tgt):
+def printRecord(tgt):
 	rec = gi.record_by_name(tgt)
 	city = rec['city']
-	region = rec['region_name']
+#	region = rec['region']
 	country = rec['country_name']
 	long = rec['longitude']
 	lat = rec['latitude']
