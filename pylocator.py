@@ -3,8 +3,20 @@
 
 # Two prerequisites:
 # 1. Local copy of MaxMind GeoLiteCity database
-# 2. pygeoip library by Jennifer Ennis at code.google.com/p/pygeoip
-
+# 2. pygeoip library by Jennifer Ennis via pip install pygeoip (github hosts)
 
 
 import pygeoip
+gi = pygeoip.GeoIP('/opt/GeoIP/GeoLiteCity.dat')
+
+def printRecird(tgt):
+	rec = gi.record_by_name(tgt)
+	city = rec['city']
+	region = rec['region_name']
+	country = rec['country_name']
+	long = rec['longitude']
+	lat = rec['latitude']
+	print('[*] Target: ' + tgt + ' Geolocated. ')
+	print([+] '+str(city)+', '+str(region)+', '+str(country)')
+
+	
