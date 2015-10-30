@@ -20,7 +20,7 @@ def printRecord(tgt):
 	print('+str(city)+', '+str(region)+', '+str(country)')
 
 # Enter the IP you wish to locate
-tgt = '134.42.114.185'
+tgt = '8.8.8.8'
 
 printRecord(tgt)
 
