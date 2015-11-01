@@ -21,8 +21,9 @@ def printRecord(tgt):
 
 # Enter the IP you wish to locate
 tgt = '8.8.8.8'
-tgt = '4.2.2.2'
+tgt2 = '4.2.2.2'
 
 printRecord(tgt)
+printRecord(tgt2)
 
 # -30-
