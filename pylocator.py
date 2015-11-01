@@ -25,5 +25,6 @@ tgt2 = '4.2.2.2'
 
 printRecord(tgt)
 printRecord(tgt2)
+print('No additional targets.  Job completed.')
 
 # -30-
