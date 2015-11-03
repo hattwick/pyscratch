@@ -12,12 +12,12 @@ gi = pygeoip.GeoIP('/opt/GeoIP/GeoLiteCity.dat')
 def printRecord(tgt):
 	rec = gi.record_by_name(tgt)
 	city = rec['city']
-#	region = rec['region']
+	region = rec['region_name']
 	country = rec['country_name']
 	long = rec['longitude']
 	lat = rec['latitude']
 	print('[*] Target: ' + tgt + ' Geolocated. ')
-	print('+str(city)+', '+str(region)+', '+str(country)')
+	print('[+] '+str(city)+', '+str(region)+', '+str(country))
 
 # Enter the IP you wish to locate
 tgt = '8.8.8.8'
