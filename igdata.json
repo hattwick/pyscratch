@@ -1,0 +1,8 @@
+{
+    "4507": {
+        "Role": "IDF Switch",
+        "Location": "Closet",
+        "Type": "Blade chassis",
+        "Special": "Power over ethernet" 
+    }
+}
