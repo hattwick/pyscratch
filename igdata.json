@@ -6,3 +6,12 @@
         "Special": "Power over ethernet" 
     }
 }
+
+{
+    "6509": {
+        "Role": "MDF Switch",
+        "Location": "Small Office Core",
+        "Type": "Blade chassis",
+        "Special": "LAN/WAN" 
+    }
+}
