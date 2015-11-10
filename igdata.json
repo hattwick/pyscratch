@@ -15,3 +15,30 @@
         "Special": "LAN/WAN" 
     }
 }
+
+{
+    "7010": {
+        "Role": "Core Router",
+        "Location": "Data Center",
+        "Type": "Blade chassis",
+        "Special": "Nexus Legacy Core" 
+    }
+}
+
+{
+    "5048": {
+        "Role": "Top of Rack",
+        "Location": "Data Center",
+        "Type": "Fixed with FEX",
+        "Special": "Nexus Legacy" 
+    }
+}
+
+{
+    "3064": {
+        "Role": "Top of Rack",
+        "Location": "Data Center",
+        "Type": "Fixed",
+        "Special": "Nexus Low Latency" 
+    }
+}
