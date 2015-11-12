@@ -32,5 +32,12 @@
         "Location": "Data Center",
         "Type": "Fixed",
         "Special": "Nexus Low Latency" 
+    },
+
+     "9172": {
+        "Role": "Top of Rack",
+        "Location": "Data Center",
+        "Type": "Fixed",
+        "Special": "FEX terminator + NonProd Core" 
     }
 }
