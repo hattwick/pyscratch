@@ -1,3 +1,6 @@
+// Test web server.  
+// Requires npm install network
+
 // "use strict";
 var http = require('http');
 var server = http.createServer();
