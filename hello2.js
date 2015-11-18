@@ -7,6 +7,13 @@ server.on('request', function(req, res)  {
 	res.end('Node Server is Listening');
 });
 
+var network = require('network');
+
+network.get_public_ip(function(err, ip) {
+  console.log(err || ip); // log public IP address
+})
+
+
 server.listen(8080)
 console.log('Server running on http://localhost:9000')
 
