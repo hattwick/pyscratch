@@ -16,6 +16,9 @@ network.get_public_ip(function(err, ip) {
   console.log(err || ip); // log public IP address
 })
 
+network.get_gateway_ip(function(err, ip) {
+  console.log(err || ip); // err may be 'No active network interface found.'
+})
 
 server.listen(8080)
 console.log('Server running on http://localhost:9000')
