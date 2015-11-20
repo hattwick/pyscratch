@@ -10,12 +10,17 @@ server.on('request', function(req, res)  {
 	res.end('Node Server is Listening');
 });
 
+
+// Get public IP
+
 var network = require('network');
 
 network.get_public_ip(function(err, ip) {
   console.log(err || ip); // log public IP address
 })
 
+
+// Get default Gateway address
 network.get_gateway_ip(function(err, ip) {
   console.log(err || ip); // err may be 'No active network interface found.'
 })
