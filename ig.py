@@ -1,6 +1,7 @@
 # Interating and Generating
 
 import json
+import pyperclip
 
 from pprint import pprint
 
