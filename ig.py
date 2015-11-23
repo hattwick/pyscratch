@@ -21,3 +21,18 @@ pprint(data)
 
 print('\nFormatted with spaces data\n')
 pprint(data, indent=4, width=40)
+
+
+
+# Separate approach using Dictionary
+
+
+router_dictionary = ['7010': 'Data Center',
+					'7018': 'Data Center',
+					'9372': 'Data Center', 
+					'5448': 'Data Center,'
+					'3604': 'Data Center',
+					'2232': 'Data Center',
+					'6509': 'Edge',
+					'4507R+E': 'Campus',
+					'1001': 'Edge']
