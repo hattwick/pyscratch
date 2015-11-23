@@ -42,3 +42,8 @@ print('Router Keys')
 print('===========')
 print(list(router_dictionary.keys()))
 print('\n')
+print('Dictionary')
+print('==========')
+
+for k in router_dictionary.keys():
+	print(k)
