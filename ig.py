@@ -38,6 +38,7 @@ router_dictionary = {'7010': 'Data Center',
 					'1001': 'Edge'}
 
 
+# Display dictionary contents
 print('Router Keys')
 print('===========')
 print(list(router_dictionary.keys()))
@@ -45,5 +46,5 @@ print('\n')
 print('Dictionary')
 print('==========')
 
-for k in router_dictionary.keys():
-	print(k)
+for k , v in router_dictionary.items():
+	print(k, v)
