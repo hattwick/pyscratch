@@ -48,3 +48,10 @@ print('==========')
 
 for k , v in router_dictionary.items():
 	print(k, v)
+
+# Second method - print the tuple
+
+print('\nDictionary in Tuple Form')
+print('=======================')
+for i in router_dictionary.items():
+	print(i)
