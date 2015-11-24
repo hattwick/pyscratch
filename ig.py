@@ -24,12 +24,15 @@ print('\nFormatted with spaces data\n')
 pprint(data, indent=4, width=40)
 
 
-# REGEX search for a particular model
-
+# REGEX search for a particular model  
+# ^is a startswith search.
+# . is any character * is one or more times
 for line in router_models:
 	line = line.rstrip()
 	if re.search('7018', line) :
 	   print('\nSearching for legacy 7K...FOUND:',line, '\n')
+
+
 
 # Separate approach using Dictionary
 
