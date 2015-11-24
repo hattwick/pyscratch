@@ -2,6 +2,7 @@
 
 import json
 import pyperclip
+import re
 
 from pprint import pprint
 
@@ -55,3 +56,9 @@ print('\nDictionary in Tuple Form')
 print('=======================')
 for i in router_dictionary.items():
 	print(i)
+
+
+# Method for checking if key exists
+
+print('\nChecking for older 7200-series routers')
+print(str(router_dictionary.get('7200', 0)))	
