@@ -4,3 +4,5 @@ mongocommands1
 *.txt
 
 spa/
+
+*.log
