@@ -32,7 +32,7 @@
 
         "3064": {
             "Role": "Top of Rack",
-          ZZ  "Location": "Data Center",
+            "Location": "Data Center",
             "Type": "Fixed",
             "Special": "Nexus Low Latency" 
         },
