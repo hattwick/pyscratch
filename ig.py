@@ -69,7 +69,7 @@ for i in router_dictionary.items():
 
 # Method for checking if key exists
 
-print('\nChecking for older 7200-series routers')
-print(str(router_dictionary.get('7200', 0)))	
+print('\nChecking for older 6500-series routers')
+print(str(router_dictionary.get('6509', 0)))	
 
 
