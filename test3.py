@@ -15,5 +15,7 @@ reachable = input()
 
 for line in response.readlines():
     print(line)
+    # add counter for IPs successfully reached
+    # and a list of successful IPs.
 
 # -30-
