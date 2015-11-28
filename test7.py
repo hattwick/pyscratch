@@ -25,5 +25,7 @@ for line in hand:
 #convert to int
 convertedlist = [];
 for n in intlist:
-	convertedlist.append(int(n));
-print(listsum[convertedlist])
+	n = int(n[0])
+	convertedlist.append(n)
+print(convertedlist)
+print(listsum(convertedlist))\
