@@ -18,7 +18,7 @@ for line in hand:
 	line = line.rstrip()
 	stuff = re.findall('([0-9]+)', line)
 	if len(stuff) <1 : continue
-	print(stuff)
+	#print(stuff)
 	intlist.append(stuff)
 
 
