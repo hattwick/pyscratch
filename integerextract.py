@@ -14,14 +14,13 @@ print(total_integer)
 print('\n\n\n *** Beginning extract and sum routine: ***\n')
 
 for line in datafile:
-	#line = line.rstrip()
-	intextract = re.findall('^([0-9])+', line)
-	# if len(intextract) != 1 : continue
-	num = float(intextract[0])
+	line = line.rstrip()
+	intextract = re.findall(('[0-9])+', line)
+	num = (intextract[0])
 	print(num)
 	intlist.append(num)
 
-print(intlist)
+# print(intlist)
 	
 
 # print('done')
