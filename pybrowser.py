@@ -30,8 +30,8 @@ filehandler = urlreq.urlopen ('http://www.py4info.com/code/romeo.txt')
 count = dict()
 
 for line in filehandler:
-	#words = line.split()
-	#for word in words:
-	#	count[word] = count.get(word,0) + 1
+	words = line.split()
+	for word in words:
+		count[word] = count.get(word,0) + 1
 	print(line.strip())
-print(count)
+print('Printing dictionary contents:\n',count)
