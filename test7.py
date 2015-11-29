@@ -18,14 +18,16 @@ for line in hand:
 	line = line.rstrip()
 	stuff = re.findall('([0-9]+)', line)
 	if len(stuff) <1 : continue
-	#print(stuff)
-	intlist.append(stuff)
+	print(stuff)
+
+
+#	intlist.append(stuff)
 
 
 #convert to int
-convertedlist = [];
-for n in intlist:
-	n = int(n[0])
-	convertedlist.append(n)
-print(convertedlist)
-print(listsum(convertedlist))\
+#convertedlist = [];
+#for n in intlist:
+#	n = int(n[0])
+#	convertedlist.append(n)
+#print(convertedlist)
+#print(listsum(convertedlist))

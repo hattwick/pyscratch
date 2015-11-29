@@ -1,5 +1,6 @@
-# test - delete
-# refining test 7 to include elements which are not making it into the converted list
+# Read file, use regex to pull all integers and sum
+# Work examples informed by Coursera, Using Python to Access Web Data
+# Hattwick-style
 
 import re
 
@@ -19,7 +20,7 @@ def listsum(numlist):
    return sum
 
 
-hand = open('data1.txt')
+hand = open('regex_sum_207065.txt')
 numlist = list()
 for line in hand:
     line = line.rstrip()
@@ -29,14 +30,5 @@ for line in hand:
     countitup = (listsum(stuff))
     linetotal=linetotal+countitup
     print(linetotal)
-    intlist.append(stuff)
-
-
-#convert to int
-#print('Stuff before we change it:\n', stuff)
-convertedlist = [];
-for n in intlist:
-    n = int(n[0])
-    convertedlist.append(n)
-print(convertedlist)
-print(listsum(convertedlist))
+ 
+ # -30- 
