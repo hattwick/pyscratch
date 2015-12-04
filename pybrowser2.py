@@ -5,7 +5,7 @@
 
 
 import urllib.request as urlreq
-filehandler = urlreq.urlopen ('http://www.py4info.com/code/romeo.txt')
+filehandler = urlreq.urlopen ('http://www.pythonlearn.com/code/intro-short.txt')
 count = dict()
 
 for line in filehandler:
@@ -13,6 +13,7 @@ for line in filehandler:
 	for word in words:
 		count[word] = count.get(word,0) + 1
 	print(line.strip())
+	print("\n")
 print('Printing dictionary contents:\n',count)
 
 
