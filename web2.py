@@ -6,6 +6,7 @@ import urllib
 from BeautifulSoup import BeautifulSoup
 import ssl
 import json
+import sys
 
 # to verify BeautifulSoup version, enter REPL and type:
 # print BeautifulSoup.__version__
@@ -17,8 +18,8 @@ tempurl = url
 
 scontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
 
-html = urllib.urlopen(url, context=scontext).read()
-soup = BeautifulSoup(html)
+html = urllib.urlopen(url, context=scontext)
+soup = html.read()
 
 # Retrieve a list of anchor tags
 # Each tag is like a dictionary of HTML attributes
@@ -40,6 +41,10 @@ print '#### done with loop'
 print urllist1[3]
 url = urllist1[3]
 
+
+######## T E M P O R A R Y B R E A K #######
+
+sys.exit()
 
 # manual loop
 urllist2=[]      #Initialist
