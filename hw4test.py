@@ -20,12 +20,12 @@ def listsum(numlist):
    return sum
 
 
-hand = open('regex_sum_207065.txt')
+hand = open('testdata.txt')
 numlist = list()
 for line in hand:
     line = line.rstrip()
     print line
-    stuff = re.findall('comments([0-9]+'), line)
+    stuff = re.findall('([0-9]+)', line)
     if len(stuff) <1 : continue
     print(stuff)
     countitup = (listsum(stuff))

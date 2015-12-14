@@ -1,8 +1,12 @@
-# Read file, use regex to pull all integers and sum
-# Work examples informed by Coursera, Using Python to Access Web Data
-# Hattwick-style
+# raw html extract and parse
 
+import urllib
 import re
+
+sock = urllib.urlopen("http://python-data.dr-chuck.net/comments_207070.html ")
+htmlSource = sock.read()
+sock.close()
+print htmlSource
 
 intlist = list()
 linetotal = 0
@@ -20,16 +24,13 @@ def listsum(numlist):
    return sum
 
 
-hand = open('regex_sum_207065.txt')
-numlist = list()
-for line in hand:
-    line = line.rstrip()
-    print line
-    stuff = re.findall('comments([0-9]+'), line)
+
+for line in htmlSource:
+    #line = line.rstrip()
+    stuff = re.findall('<span([0-9]+)', line)
     if len(stuff) <1 : continue
-    print(stuff)
+    print('Found ',stuff)
     countitup = (listsum(stuff))
     linetotal=linetotal+countitup
     print(linetotal)
  
- # -30- 
