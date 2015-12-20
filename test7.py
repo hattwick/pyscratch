@@ -1,33 +1,27 @@
-# test - delete
-
-import re
-
-intlist = list()
+# test - scratch
 
 
-def listsum(numlist):
-   sum = 0
-   for i in numlist:
-       sum = sum + i
-   return sum
+import urllib
+import xml.etree.ElementTree as ET
+from xml.parsers import expat
 
+# Retrieve, print,  and save xml file via urllib
 
-hand = open('data1.txt')
-numlist = list()
-for line in hand:
-	line = line.rstrip()
-	stuff = re.findall('([0-9]+)', line)
-	if len(stuff) <1 : continue
-	print(stuff)
+xmlfile = urllib.urlopen('http://python-data.dr-chuck.net/comments_42.xml')
+xmlcontent = xmlfile.read()
 
+print xmlcontent
 
-#	intlist.append(stuff)
+fhand = open('xmldata.xml','w')
+fhand.write(xmlcontent)
+fhand.close
 
+# Save xml file and conver the data into a tree of nodes
 
-#convert to int
-#convertedlist = [];
-#for n in intlist:
-#	n = int(n[0])
-#	convertedlist.append(n)
-#print(convertedlist)
-#print(listsum(convertedlist))
+print 'file saved in xmldata.xml ... starting xml tree walk ...'
+
+tree = ET.fromstring(xmlcontent)
+
+# Find all of tehe comment nodes
+
+# -30-
