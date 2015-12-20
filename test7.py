@@ -11,6 +11,8 @@ xmlfile = urllib.urlopen('http://python-data.dr-chuck.net/comments_42.xml')
 xmlcontent = xmlfile.read()
 
 print xmlcontent
+length = len(xmlcontent)
+print 'Retrieved ', length, ' characters.'
 
 fhand = open('xmldata.xml','w')
 fhand.write(xmlcontent)
@@ -21,7 +23,12 @@ fhand.close
 print 'file saved in xmldata.xml ... starting xml tree walk ...'
 
 tree = ET.fromstring(xmlcontent)
+print '///Printing tree///'
 
-# Find all of tehe comment nodes
+counts = tree.findall('.//count')
+print counts
+
+# Find all of the comment nodes
+
 
 # -30-
