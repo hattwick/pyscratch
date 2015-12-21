@@ -3,7 +3,7 @@
 import urllib
 import re
 
-sock = urllib.urlopen("http://python-data.dr-chuck.net/comments_207070.html ")
+sock = urllib.urlopen("http://python-data.dr-chuck.net/comments_207067.html ")
 htmlSource = sock.read()
 sock.close()
 print htmlSource

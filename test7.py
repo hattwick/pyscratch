@@ -7,7 +7,7 @@ from xml.parsers import expat
 
 # Retrieve, print,  and save xml file via urllib
 
-xmlfile = urllib.urlopen('http://python-data.dr-chuck.net/comments_42.xml')
+xmlfile = urllib.urlopen('http://python-data.dr-chuck.net/comments_207067.xml')
 xmlcontent = xmlfile.read()
 
 print xmlcontent
@@ -27,6 +27,9 @@ print '///Printing tree///'
 
 counts = tree.findall('.//count')
 print counts
+
+for  elt in tree.getiterator():
+    print "%s: '%s'" % (elt.tag, elt.text.strip())
 
 # Find all of the comment nodes
 

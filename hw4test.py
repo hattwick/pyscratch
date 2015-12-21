@@ -3,6 +3,7 @@
 # Hattwick-style
 
 import re
+import urllib
 
 intlist = list()
 linetotal = 0
@@ -20,7 +21,7 @@ def listsum(numlist):
    return sum
 
 
-hand = open('testdata.txt')
+hand = open('xmldata.xml')
 numlist = list()
 for line in hand:
     line = line.rstrip()
