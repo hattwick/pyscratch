@@ -1,6 +1,5 @@
 import urllib
 import json
-import simplejson
 import urllib2
 
 
@@ -18,5 +17,9 @@ print data
 # print 'name',info["name"]
 # print 'Total Names: ', len(info)
 
-info = opener.open(uh)
-simplejson.load(info)
+request = urllib2.Request(url)
+opener = urllib2.build_opener()
+file = opener.open(request)
+json = json.loads(file.read())
+print json['name']
+
