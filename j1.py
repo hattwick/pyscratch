@@ -1,5 +1,7 @@
 import urllib
 import json
+import simplejson
+import urllib2
 
 
 
@@ -10,7 +12,11 @@ data = uh.read()
 print 'Retrieved',len(data),'characters'
 print data
 
+# Now pull it into JSON
 
+# info = json.loads(data)
+# print 'name',info["name"]
+# print 'Total Names: ', len(info)
 
-for  elt in data.getiterator():
-    print "%s: '%s'" % (elt.tag, elt.text.strip())
+info = opener.open(uh)
+simplejson.load(info)
