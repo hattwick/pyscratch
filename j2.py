@@ -210,15 +210,27 @@ input = '''
 }
 ]'''
 
-info = json.loads((input), object_pairs_hook=OrderedDict)
+
+def parseIntegers(mixedList):
+    newList = [i for i in mixedList if isinstance(i, int)]
+    return newList
+
+
+info = json.loads(input)
 print 'Raw File\n', info
 print '\nUser count:', len(input)
 print type(info) is list
-print json.dumps(info, indent=4)
+# print json.dumps(info, indent=4)
+
+countsonly = parseIntegers(info)
+print 'Counts only', countsonly
 
 
+total = 0
 for item in info:
     try:
-      print item
+        print '\n', item
     except (ValueError,KeyError, TypeError):
       print 'JSON format error'
+
+print 'Total:', total
