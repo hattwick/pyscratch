@@ -21,5 +21,10 @@ request = urllib2.Request(url)
 opener = urllib2.build_opener()
 file = opener.open(request)
 json = json.loads(file.read())
-print json['name']
+
+print 'User count: ', len(json)
+for item in json:
+    print 'Name', item['name']
+    print 'Id', item['id']
+    print 'Count', item['count']
 
