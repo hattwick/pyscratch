@@ -81,9 +81,14 @@ for entry in all:
     cur.execute('SELECT id FROM Album WHERE title = ? ', (album, ))
     album_id = cur.fetchone()[0]
 
+    cur.execute('''INSERT OR IGNORE INTO Genre (name) 
+        VALUES ( ? )''', ( genre, ) )
+    cur.execute('SELECT id FROM Genre WHERE name = ? ', (genre, ))
+    genre_id = cur.fetchone()[0]
+
     cur.execute('''INSERT OR REPLACE INTO Track
-        (title, album_id, len, rating, count) 
-        VALUES ( ?, ?, ?, ?, ? )''', 
-        ( name, album_id, length, rating, count ) )
+        (title, album_id, len, rating, count, genre_id) 
+        VALUES ( ?, ?, ?, ?, ?, ? )''', 
+        ( name, album_id, length, rating, count, genre_id ) )
 
     conn.commit()
