@@ -37,7 +37,12 @@ print json.dumps(js, indent=4)
 print type(js) is dict
 
 total = 0
+for item in info:
+    print 'Name', item['name']
+    print 'Count', item['count']
+    total = total + item['count']
 
+print 'Count Total: ', total
 
 
 
