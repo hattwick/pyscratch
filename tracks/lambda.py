@@ -1,4 +1,5 @@
-# test lamba function
+# test lamba function 
+# lambda is more commonly used with map(), filter(), reduce() operatons in python
 # No imports needed for this one
 
 even = lambda num: num%2 == 0
