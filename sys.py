@@ -1,5 +1,6 @@
 #! Python3 routine for calling system information
 # Influenced by Coursera Python for Everybody and various references
+# comment
 
 import os
 from subprocess import call
