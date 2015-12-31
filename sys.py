@@ -12,4 +12,10 @@ print(os.getlogin())
 print(os.getcwd())
 print(os.getenv("PATH"))
 
+
+# Interactive commands
+os.system('ls -lrt')
+
+command  = input("Press Enter to run ls -lrt")
+call(["ls", "-lrt"])
 # -30- 
