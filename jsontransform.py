@@ -24,9 +24,6 @@ print('Type of loaded JSON objects is',x)
 
 
 
-
-
-
 '''
 
 
