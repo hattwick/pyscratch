@@ -4,8 +4,20 @@ import json
 import pprint
 
 with open('json-raw-in.json') as json_data:
-    ping = json.loads(json_data)
+    ping = json.load(json_data)
     json_data.close()
+
+with open('json-transform-to.json') as json_data:
+    postform = json.load(json_data)
+    json_data.close()
+
+print('inboundjson')
+print(ping)
+print('\nMaps to new json')
+print(postform)
+
+x=type(postform)
+print('Type of loaded JSON objects is',x)
 
 
 
