@@ -17,4 +17,9 @@ os.system('ls -lrt')
 
 command  = input("Press Enter to run ls -lrt")
 call(["ls", "-lrt"])
+<<<<<<< HEAD
 # -30- 
+=======
+
+# -30- 
+>>>>>>> origin/master
