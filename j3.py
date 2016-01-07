@@ -44,7 +44,3 @@ for item in info:
     total = total + item['count']
 
 print 'Count Total: ', total
-
-
-
-
