@@ -1,6 +1,7 @@
 import json
 from collections import OrderedDict
 import urllib
+import request
 
 sampledata = '''
     {
@@ -43,7 +44,3 @@ for item in info:
     total = total + item['count']
 
 print 'Count Total: ', total
-
-
-
-
