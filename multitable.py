@@ -41,10 +41,13 @@ if ( len(fname) < 1 ) : fname = 'roster_data.json'
 str_data = open(fname).read()
 json_data = json.loads(str_data)
 
+# json_data is a python list now
+
 for entry in json_data:
 
     name = entry[0];
     title = entry[1];
+    role = 0;
 
     print name, title
 
@@ -59,7 +62,7 @@ for entry in json_data:
     course_id = cur.fetchone()[0]
 
     cur.execute('''INSERT OR REPLACE INTO Member
-        (user_id, course_id) VALUES ( ?, ? )''', 
-        ( user_id, course_id ) )
+        (user_id, course_id, role) VALUES ( ?, ?, ? )''', 
+        ( user_id, course_id, role ) )
 
     conn.commit()
