@@ -7,7 +7,7 @@ import sqlite3
 conn = sqlite3.connect('rosterdb.sqlite')
 cur = conn.cursor()
 
-# Do some setup
+# Do some setup  Triple-quoted string allows us to drop multiple SQL instructions
 cur.executescript('''
 DROP TABLE IF EXISTS User;
 DROP TABLE IF EXISTS Member;
