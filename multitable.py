@@ -1,6 +1,5 @@
 # multitable.py
 
-
 import json
 import sqlite3
 
