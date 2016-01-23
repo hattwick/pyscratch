@@ -50,6 +50,7 @@ for entry in json_data:
     role = 0;
 
     print name, title
+    time.sleep(1)
 
     cur.execute('''INSERT OR IGNORE INTO User (name) 
         VALUES ( ? )''', ( name, ) )
