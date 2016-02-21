@@ -19,7 +19,6 @@ for line in handle:
     for word in time:
         counts[word] =counts.get(word,0) + 1
 
-
 print '\nPrinting last time after loop\n'
 print time
 print '\n now printing counts....'
