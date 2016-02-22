@@ -1,3 +1,5 @@
+# Short function to open and parse mailbox header data by hour
+
 fname = ('mbox-short.txt')
 fhand = open(fname)
 c = dict()
@@ -10,3 +12,5 @@ for line in fhand:
     c[hour] = c.get(hour,0) + 1
 
 print c
+
+# -30-
