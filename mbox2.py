@@ -3,8 +3,6 @@
 import sqlite3
 import re
 
-
-
 # fname = raw_input('Enter file name: ')
 fname = 'mbox-short.txt'
 if ( len(fname) < 1 ) : fname = 'mbox-short.txt'
@@ -20,6 +18,5 @@ for line in fh:
     print email
     print org
  
-
 # org = re.search("@([\w.]+)",email).group(0)
 #     org = re.findall('@([\w.]+)', email)
