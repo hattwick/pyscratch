@@ -23,5 +23,12 @@ all_data=[]
 for observation in data:
     record = {}
     for item in observation:
+        lookup_key = item.attrib.keys()[0]
+        rec_key = item.attrib[lookup_key]
+        print '\nLookup key'
+        print lookup_key
+        print '\nrecord key'
+        print rec_key
+        print '\nRaw attributes:'
         print item.attrib
 
