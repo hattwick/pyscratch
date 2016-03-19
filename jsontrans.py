@@ -39,7 +39,7 @@ for sensor in ping['sensors']:
             sensor['device'],
         ],
         'name': sensor['sensor'],
-        'status': 'OK' if sensor['status'] == 'Up' else 'ERROR',
+        'status': 'PASS' if sensor['status'] == 'Up' else 'ERROR',
          'messages': [
              sensor['lastvalue'],
         ]
