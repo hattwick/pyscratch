@@ -1,3 +1,6 @@
+# Test of XML parsing
+# Written in Python2.7...will port easily to 3
+
 from xml.etree import ElementTree as ET
 
 tree = ET.parse('data-text.xml')
