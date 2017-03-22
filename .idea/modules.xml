@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/pyscratch.iml" filepath="$PROJECT_DIR$/.idea/pyscratch.iml" />
-      <module fileurl="file://$USER_HOME$/work/.idea/work.iml" filepath="$USER_HOME$/work/.idea/work.iml" />
     </modules>
   </component>
 </project>
