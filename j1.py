@@ -26,3 +26,4 @@ print 'User count: ', len(json)
 for item in json:
     print 'Name', item['name']
     print 'Id', item['id']
+
