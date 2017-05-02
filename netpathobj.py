@@ -66,6 +66,5 @@ if __name__ == "__main__":
     print("Vertices:")
     print(graph.vertices())
 
-    graph = Graph(sites)
 
 
