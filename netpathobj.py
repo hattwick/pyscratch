@@ -66,5 +66,8 @@ if __name__ == "__main__":
     print("Vertices:")
     print(graph.vertices())
 
+    print("\nEdges:")
+    print(graph.edges())
+
 
 
