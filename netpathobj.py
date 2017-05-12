@@ -42,6 +42,25 @@ class Graph(object):
                     edges.append({vertex, neighbor})
         return edges
 
+    def find_path(self, startpoint, endpoint, path=None):
+        """ find a single path between two endpoints """
+        if path == None:
+            path = []    # None is default; initialize the list of paths
+        graph = self.__graph_dict
+        path = path + [startpoint]
+        if startpoint == endpoint:
+            return path
+        if startpoint not in graph:
+            return None
+        for vertex in graph[startpoint]:
+            if vertex not in path:
+                extended_path = self.find_path(vertex,
+                                               endpoint,
+                                               path)
+                if extended_path:
+                    return extended_path
+        return None
+
     def __str__(self):
         res = "vertices: "
         for k in self.__graph_dict:
@@ -73,6 +92,10 @@ if __name__ == "__main__":
     graph.add_vertex("CH1")
     print("\nUpdated Network Endpoints):")
     print(graph.vertices())
+
+    print("\nFind path from Colo1 to Colo3")
+    path = graph.find_path("Colo1", "Colo2")
+    print(path)
 
 
 
