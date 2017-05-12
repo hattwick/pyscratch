@@ -63,10 +63,19 @@ if __name__ == "__main__":
              }
 
     graph = Graph(sites)
-    print("Vertices:")
+    print("Vertices (Network Endpoints):")
     print(graph.vertices())
 
-    print("\nEdges:")
+    print("\nEdges (Network Point-to-Point Links):")
     print(graph.edges())
+
+    print("\nAdd Endpoint:")
+    graph.add_vertex("CH1")
+    print("\nUpdated Network Endpoints):")
+    print(graph.vertices())
+
+
+
+
 
 
