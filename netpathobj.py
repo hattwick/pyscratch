@@ -96,6 +96,7 @@ if __name__ == "__main__":
     print("\nFind path from Colo1 to Colo3")
     path = graph.find_path("Colo1", "Colo2")
     print(path)
+    # Debug Note:  should the destination vertex appear here?
 
     print("\nFind path from HQ to Colo3")
     path = graph.find_path("HQ", "Colo2")
