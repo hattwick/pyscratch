@@ -97,6 +97,9 @@ if __name__ == "__main__":
     path = graph.find_path("Colo1", "Colo2")
     print(path)
 
+    print("\nFind path from HQ to Colo3")
+    path = graph.find_path("HQ", "Colo2")
+    print(path)
 
 
 
