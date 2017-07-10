@@ -3,6 +3,9 @@
 
 # This is the function approach
 
+# Decision...Do we consider Network Carriers to be nodes?
+# For example, is Time Warner providing connections in a data center itself a node?
+
 graph = { "HQ" : ["DC1", "DC2"],
           "BackOffice" : ["DC1", "DC2"],
           "DC1" : ["HQ","BackOffice", "DC2","Colo1", "Colo2", "Colo3"],
