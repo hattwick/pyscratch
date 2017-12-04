@@ -6,18 +6,19 @@
 # Decision...Do we consider Network Carriers to be nodes?
 # For example, is Time Warner providing connections in a data center itself a node?
 
-graph = { "HQ" : ["DC1", "DC2"],
-          "BackOffice" : ["DC1", "DC2"],
-          "DC1" : ["HQ","BackOffice", "DC2","Colo1", "Colo2", "Colo3"],
-          "DC2" : ["HQ", "BackOffice", "DC1", "Colo1", "Colo2", "Colo3"],
-          "Colo1" : ["DC2", "Colo3"],
-          "Colo2" : ["DC1"],
-          "Colo3" : ["Colo1"],
-          "Colo4" : []
-          }
+graph = {"HQ": ["DC1", "DC2"],
+         "BackOffice": ["DC1", "DC2"],
+         "DC1": ["HQ", "BackOffice", "DC2", "Colo1", "Colo2", "Colo3"],
+         "DC2": ["HQ", "BackOffice", "DC1", "Colo1", "Colo2", "Colo3"],
+         "Colo1": ["DC2", "Colo3"],
+         "Colo2": ["DC1"],
+         "Colo3": ["Colo1"],
+         "Colo4": []
+         }
 
 print('Starting graph analysis')
 print('This is printing the old way')
+
 
 def generate_edge(graph):
     edges = []
@@ -25,6 +26,7 @@ def generate_edge(graph):
         for neighbor in graph[node]:
             edges.append((node, neighbor))
     return edges
+
 
 def isolated_node_check(graph):
     isolated = []
@@ -34,9 +36,6 @@ def isolated_node_check(graph):
     return isolated
 
 
-
 print('\nGenerating node graph: \n', generate_edge(graph), '\n')
 
 print('\nChecking for isolated nodes: \n', isolated_node_check(graph), '\n')
-
-

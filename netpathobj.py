@@ -4,7 +4,6 @@
 # This is the object approach
 
 class Graph(object):
-
     def __init__(self, graph_dict=None):
         """ Initialize graph object."""
         if graph_dict == None:
@@ -45,7 +44,7 @@ class Graph(object):
     def find_path(self, startpoint, endpoint, path=None):
         """ find a single path between two endpoints """
         if path == None:
-            path = []    # None is default; initialize the list of paths
+            path = []  # None is default; initialize the list of paths
         graph = self.__graph_dict
         path = path + [startpoint]
         if startpoint == endpoint:
@@ -69,6 +68,7 @@ class Graph(object):
         for edge in self.__generate_edges():
             res += str(edge) + " "
         return res
+
 
 if __name__ == "__main__":
     sites = {"HQ": ["DC1", "DC2"],
@@ -94,12 +94,10 @@ if __name__ == "__main__":
     print(graph.vertices())
 
     print("\nFind path from Colo1 to Colo3")
-    path = graph.find_path("Colo1", "Colo2")
+    path = graph.find_path("Colo1", "Colo3")
     print(path)
     # Debug Note:  should the destination vertex appear here?
 
     print("\nFind path from HQ to Colo3")
     path = graph.find_path("HQ", "Colo2")
     print(path)
-
-
