@@ -75,10 +75,10 @@ if __name__ == "__main__":
              "BackOffice": ["DC1", "DC2"],
              "DC1": ["HQ", "BackOffice", "DC2", "Colo1", "Colo2", "Colo3"],
              "DC2": ["HQ", "BackOffice", "DC1", "Colo1", "Colo2", "Colo3"],
-             "Colo1": ["DC2", "Colo3"],
-             "Colo2": ["DC1"],
-             "Colo3": ["Colo1"],
-             "Colo4": []
+             "Colo-East-1a": ["DC2", "Colo3"],
+             "Colo-East-1b": ["DC1"],
+             "Colo-East-2": ["Colo1"],
+             "Colo-EU": []
              }
 
     graph = Graph(sites)
