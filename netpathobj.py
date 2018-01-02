@@ -78,7 +78,10 @@ if __name__ == "__main__":
              "Colo-East-1a": ["DC2", "Colo3"],
              "Colo-East-1b": ["DC1"],
              "Colo-East-2": ["Colo1"],
-             "Colo-EU": []
+             "Colo-EU": [],
+             "Colo-AP": [],
+             "Colo-MD1": [],
+             "Colo-MD2": []
              }
 
     graph = Graph(sites)
