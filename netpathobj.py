@@ -73,7 +73,7 @@ class Graph(object):
 if __name__ == "__main__":
     sites = {"HQ": ["DC1", "DC2"],
              "BackOffice": ["DC1", "DC2"],
-             "DC1": ["HQ", "BackOffice", "DC2", "Colo1", "Colo2", "Colo3"],
+             "DC1": ["HQ", "BackOffice", "DC2", "Colo-Ezst-1a", "Colo-East-2"],
              "DC2": ["HQ", "BackOffice", "DC1", "Colo1", "Colo2", "Colo3"],
              "Colo-East-1a": ["DC2", "Colo3"],
              "Colo-East-1b": ["DC1"],
